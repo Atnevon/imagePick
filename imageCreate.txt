@@ -1,0 +1,270 @@
+
+C:\Users\arlic\Desktop\Rails>rails new imagepick
+DL is deprecated, please use Fiddle
+      create
+      create  README.rdoc
+      create  Rakefile
+      create  config.ru
+      create  .gitignore
+      create  Gemfile
+      create  app
+      create  app/assets/javascripts/application.js
+      create  app/assets/stylesheets/application.css
+      create  app/controllers/application_controller.rb
+      create  app/helpers/application_helper.rb
+      create  app/views/layouts/application.html.erb
+      create  app/assets/images/.keep
+      create  app/mailers/.keep
+      create  app/models/.keep
+      create  app/controllers/concerns/.keep
+      create  app/models/concerns/.keep
+      create  bin
+      create  bin/bundle
+      create  bin/rails
+      create  bin/rake
+      create  bin/setup
+      create  config
+      create  config/routes.rb
+      create  config/application.rb
+      create  config/environment.rb
+      create  config/secrets.yml
+      create  config/environments
+      create  config/environments/development.rb
+      create  config/environments/production.rb
+      create  config/environments/test.rb
+      create  config/initializers
+      create  config/initializers/assets.rb
+      create  config/initializers/backtrace_silencers.rb
+      create  config/initializers/cookies_serializer.rb
+      create  config/initializers/filter_parameter_logging.rb
+      create  config/initializers/inflections.rb
+      create  config/initializers/mime_types.rb
+      create  config/initializers/session_store.rb
+      create  config/initializers/wrap_parameters.rb
+      create  config/locales
+      create  config/locales/en.yml
+      create  config/boot.rb
+      create  config/database.yml
+      create  db
+      create  db/seeds.rb
+      create  lib
+      create  lib/tasks
+      create  lib/tasks/.keep
+      create  lib/assets
+      create  lib/assets/.keep
+      create  log
+      create  log/.keep
+      create  public
+      create  public/404.html
+      create  public/422.html
+      create  public/500.html
+      create  public/favicon.ico
+      create  public/robots.txt
+      create  test/fixtures
+      create  test/fixtures/.keep
+      create  test/controllers
+      create  test/controllers/.keep
+      create  test/mailers
+      create  test/mailers/.keep
+      create  test/models
+      create  test/models/.keep
+      create  test/helpers
+      create  test/helpers/.keep
+      create  test/integration
+      create  test/integration/.keep
+      create  test/test_helper.rb
+      create  tmp/cache
+      create  tmp/cache/assets
+      create  vendor/assets/javascripts
+      create  vendor/assets/javascripts/.keep
+      create  vendor/assets/stylesheets
+      create  vendor/assets/stylesheets/.keep
+         run  bundle install
+DL is deprecated, please use Fiddle
+Fetching gem metadata from https://rubygems.org/............
+Fetching additional metadata from https://rubygems.org/..
+Resolving dependencies...
+Using rake 10.4.2
+Using i18n 0.7.0
+Using json 1.8.3
+Using minitest 5.8.0
+Using thread_safe 0.3.5
+Using tzinfo 1.2.2
+Using activesupport 4.2.3
+Using builder 3.2.2
+Using erubis 2.7.0
+Using mini_portile 0.6.2
+Using nokogiri 1.6.6.2
+Using rails-deprecated_sanitizer 1.0.3
+Using rails-dom-testing 1.0.7
+Using loofah 2.0.3
+Using rails-html-sanitizer 1.0.2
+Using actionview 4.2.3
+Using rack 1.6.4
+Using rack-test 0.6.3
+Using actionpack 4.2.3
+Using globalid 0.3.6
+Using activejob 4.2.3
+Using mime-types 2.6.1
+Using mail 2.6.3
+Using actionmailer 4.2.3
+Using activemodel 4.2.3
+Using arel 6.0.3
+Using activerecord 4.2.3
+Using debug_inspector 0.0.2
+Using binding_of_caller 0.7.2
+Using bundler 1.7.7
+Using byebug 6.0.2
+Using coffee-script-source 1.9.1.1
+Using execjs 2.6.0
+Using coffee-script 2.4.1
+Using thor 0.19.1
+Using railties 4.2.3
+Using coffee-rails 4.1.0
+Using multi_json 1.11.2
+Using jbuilder 2.3.1
+Using jquery-rails 4.0.4
+Using sprockets 3.3.3
+Using sprockets-rails 2.3.2
+Using rails 4.2.3
+Using rdoc 4.2.0
+Using sass 3.4.17
+Using tilt 1.4.1
+Using sass-rails 5.0.3
+Using sdoc 0.4.1
+Using sqlite3 1.3.10
+Using turbolinks 2.5.3
+Using tzinfo-data 1.2015.6
+Using uglifier 2.7.1
+Using web-console 2.2.1
+Your bundle is complete!
+Use `bundle show [gemname]` to see where a bundled gem is installed.
+
+C:\Users\arlic\Desktop\Rails>cd imagepick
+
+C:\Users\arlic\Desktop\Rails\imagepick>rails g scaffold user first_name:string email:string
+DL is deprecated, please use Fiddle
+      invoke  active_record
+      create    db/migrate/20150824121158_create_users.rb
+      create    app/models/user.rb
+      invoke    test_unit
+      create      test/models/user_test.rb
+      create      test/fixtures/users.yml
+      invoke  resource_route
+       route    resources :users
+      invoke  scaffold_controller
+      create    app/controllers/users_controller.rb
+      invoke    erb
+      create      app/views/users
+      create      app/views/users/index.html.erb
+      create      app/views/users/edit.html.erb
+      create      app/views/users/show.html.erb
+      create      app/views/users/new.html.erb
+      create      app/views/users/_form.html.erb
+      invoke    test_unit
+      create      test/controllers/users_controller_test.rb
+      invoke    helper
+      create      app/helpers/users_helper.rb
+      invoke      test_unit
+      invoke    jbuilder
+      create      app/views/users/index.json.jbuilder
+      create      app/views/users/show.json.jbuilder
+      invoke  assets
+      invoke    coffee
+      create      app/assets/javascripts/users.coffee
+      invoke    scss
+      create      app/assets/stylesheets/users.scss
+      invoke  scss
+      create    app/assets/stylesheets/scaffolds.scss
+
+C:\Users\arlic\Desktop\Rails\imagepick>rails g scaffold board name:string about:text user_id:integer
+DL is deprecated, please use Fiddle
+      invoke  active_record
+      create    db/migrate/20150824121328_create_boards.rb
+      create    app/models/board.rb
+      invoke    test_unit
+      create      test/models/board_test.rb
+      create      test/fixtures/boards.yml
+      invoke  resource_route
+       route    resources :boards
+      invoke  scaffold_controller
+      create    app/controllers/boards_controller.rb
+      invoke    erb
+      create      app/views/boards
+      create      app/views/boards/index.html.erb
+      create      app/views/boards/edit.html.erb
+      create      app/views/boards/show.html.erb
+      create      app/views/boards/new.html.erb
+      create      app/views/boards/_form.html.erb
+      invoke    test_unit
+      create      test/controllers/boards_controller_test.rb
+      invoke    helper
+      create      app/helpers/boards_helper.rb
+      invoke      test_unit
+      invoke    jbuilder
+      create      app/views/boards/index.json.jbuilder
+      create      app/views/boards/show.json.jbuilder
+      invoke  assets
+      invoke    coffee
+      create      app/assets/javascripts/boards.coffee
+      invoke    scss
+      create      app/assets/stylesheets/boards.scss
+      invoke  scss
+   identical    app/assets/stylesheets/scaffolds.scss
+
+C:\Users\arlic\Desktop\Rails\imagepick>rails g scaffold pin name:string image:string user_id:integer board_id:integer
+DL is deprecated, please use Fiddle
+      invoke  active_record
+      create    db/migrate/20150824121500_create_pins.rb
+      create    app/models/pin.rb
+      invoke    test_unit
+      create      test/models/pin_test.rb
+      create      test/fixtures/pins.yml
+      invoke  resource_route
+       route    resources :pins
+      invoke  scaffold_controller
+      create    app/controllers/pins_controller.rb
+      invoke    erb
+      create      app/views/pins
+      create      app/views/pins/index.html.erb
+      create      app/views/pins/edit.html.erb
+      create      app/views/pins/show.html.erb
+      create      app/views/pins/new.html.erb
+      create      app/views/pins/_form.html.erb
+      invoke    test_unit
+      create      test/controllers/pins_controller_test.rb
+      invoke    helper
+      create      app/helpers/pins_helper.rb
+      invoke      test_unit
+      invoke    jbuilder
+      create      app/views/pins/index.json.jbuilder
+      create      app/views/pins/show.json.jbuilder
+      invoke  assets
+      invoke    coffee
+      create      app/assets/javascripts/pins.coffee
+      invoke    scss
+      create      app/assets/stylesheets/pins.scss
+      invoke  scss
+   identical    app/assets/stylesheets/scaffolds.scss
+
+C:\Users\arlic\Desktop\Rails\imagepick>subl .
+
+C:\Users\arlic\Desktop\Rails\imagepick>rake db:migrate
+DL is deprecated, please use Fiddle
+== 20150824121158 CreateUsers: migrating ======================================
+-- create_table(:users)
+   -> 0.0000s
+== 20150824121158 CreateUsers: migrated (0.0000s) =============================
+
+== 20150824121328 CreateBoards: migrating =====================================
+-- create_table(:boards)
+   -> 0.0000s
+== 20150824121328 CreateBoards: migrated (0.0000s) ============================
+
+== 20150824121500 CreatePins: migrating =======================================
+-- create_table(:pins)
+   -> 0.0000s
+== 20150824121500 CreatePins: migrated (0.0000s) ==============================
+
+
+C:\Users\arlic\Desktop\Rails\imagepick>
